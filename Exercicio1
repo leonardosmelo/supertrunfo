@@ -1,0 +1,119 @@
+#include <stdio.h>
+ 
+int main() {
+
+    /*
+      Este programa faz a leitura de informacoes de cidades e as exibe no final das entradas, serao inseridas informacoes de duas cidades
+    */
+
+    // declaracao de variaveis para dois armazenamentos simples
+
+    // primeira carta
+
+    char estado1[2] ="A";
+    char codigo1[4] = "A01";
+    char cidade1[20] = "Brasília";
+    int populacao1 = 12345;
+    float area1 = 345.678;
+    float pib1 = 12567.99;
+    int pontosturisticos1 = 20;
+
+    // segunda carta
+
+    char estado2[2] ="B";
+    char codigo2[4] = "A02";
+    char cidade2[20] = "Fortaleza";
+    int populacao2 = 123456;
+    float area2 = 234.345;
+    float pib2 = 234.567;
+    int pontosturisticos2 = 100;
+
+    printf("Este é o Jogo Super Trunfo, desenvolvido em C \n");
+
+    printf("\n");
+
+    printf("Você terá que cadastrar as informações de DUAS Cidades, conforme solicitação a seguir: \n");
+
+    // aqui iniciamos a coleta de informações da primeira carta
+
+    printf("Primeiro, informe o Estado, utilizando uma letra de 'A' a 'H' (representando um dos oito estatos) \n");
+    printf("Estado: \n");
+    scanf("%s", estado1);
+
+    printf("Agora informe o Código da Carta, utilizando a letra do Estado 'A' a 'H' seguido de um número de 01 a 04 (ex. A01, B03)\n");
+    printf("Código da Carta: \n");
+    scanf("%s", codigo1);
+
+    printf("Agora informe o Nome da Cidade, com até 20 caracteres \n");
+    printf("Nome da Cidade: \n");
+    fgets(cidade1, 20, stdin);
+
+    printf("Informe a População: \n");
+    scanf("%d", &populacao1);
+
+    printf("Informe a Área (em km²): \n");
+    scanf("%f", &area1);
+
+    printf("Informe o PIB: ");
+    scanf("%f", &pib1);
+
+    printf("Informe o Número de Pontos Turísticos: \n");
+    scanf("%d", &pontosturisticos1);
+
+    // agora vamos exibir os resultados da coleta de dados da carta 1
+
+    printf("As informações cadastradas são as seguintes: \n");
+    printf("Carta 1: \n");
+    printf("Estado: %s\n", estado1);
+    printf("Cógigo: %s\n", codigo1);
+    printf("Nome da Cidade: %s\n", cidade1);
+    printf("População: %d\n", populacao1);
+    printf("Área: %f km²\n", area1);
+    printf("PIB: %f bilhões de reais\n", pib1);
+    printf("Pontos Turísticos: %d\n", pontosturisticos1);
+ 
+    // aqui iniciamos a coleta de informações da segunda carta
+
+    printf("\n");
+    printf("\n");
+    printf("Agora vamos cadastrar a segunda carta!!! \n");
+    printf("\n");
+
+    printf("Informe o Estado, utilizando uma letra de 'A' a 'H' (representando um dos oito estatos) \n");
+    printf("Estado: \n");
+    scanf("%s", estado2);
+
+    printf("Agora informe o Código da Carta, utilizando a letra do Estado 'A' a 'H' seguido de um número de 01 a 04 (ex. A01, B03)\n");
+    printf("Código da Carta: \n");
+    scanf("%s", codigo2);
+
+    printf("Agora informe o Nome da Cidade, com até 20 caracteres \n");
+    printf("Nome da Cidade: \n");
+    fgets(cidade2, 20, stdin);
+
+    printf("Informe a População: \n");
+    scanf("%d", &populacao2);
+
+    printf("Informe a Área (em km²): \n");
+    scanf("%f", &area2);
+
+    printf("Informe o PIB: \n");
+    scanf("%f", &pib2);
+
+    printf("Informe o Número de Pontos Turísticos: \n");
+    scanf("%d", &pontosturisticos2);
+
+    // agora vamos exibir os resultados da coleta de dados da carta 2
+
+    printf("As informações cadastradas são as seguintes: \n");
+    printf("Carta 1: \n");
+    printf("Estado: %s\n", estado2);
+    printf("Cógigo: %s\n", codigo2);
+    printf("Nome da Cidade: %s\n", cidade2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %f km²\n", area2);
+    printf("PIB: %f bilhões de reais\n", pib2);
+    printf("Pontos Turísticos: %d\n", pontosturisticos2);
+
+    return 0;
+}
